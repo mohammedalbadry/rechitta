@@ -23,19 +23,19 @@
         <!-- floating question bubbles, positioned around the orb -->
         <div class="h-full w-full  flex flex-col mx-auto mt-8 h-[340px] gap-y-6 w-full max-w-[320px] items-center justify-center">
             <div class="rotate-[3.75deg] self-start">
-                <CardChatBubble text="Is there a 2-bed available..." />
+                <CardsChatBubble text="Is there a 2-bed available..." />
             </div>
             <div class="rotate-[2deg] self-end">
-                <CardChatBubble text="What's the price history?" />
+                <CardsChatBubble text="What's the price history?" />
             </div>
             <div class="-rotate-[4deg] self-start">
-                <CardChatBubble text="What is proximity to good schools" />
+                <CardsChatBubble text="What is proximity to good schools" />
             </div>
             <div class="rotate-[3deg] self-end">
-                <CardChatBubble text="Show me the floor plan" />
+                <CardsChatBubble text="Show me the floor plan" />
             </div>
             <div class="rotate-[4.3deg] self-start">
-                <CardChatBubble text="How does the payment plan work..." />
+                <CardsChatBubble text="How does the payment plan work..." />
             </div>
         </div>
         </div>

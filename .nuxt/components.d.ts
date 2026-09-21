@@ -14,9 +14,12 @@ type HydrationStrategies = {
 type LazyComponent<T> = DefineComponent<HydrationStrategies, {}, {}, {}, {}, {}, {}, { hydrated: () => void }> & T
 
 
+export const AudioOrb copy: typeof import("../components/AudioOrb copy.vue")['default']
 export const AudioOrb: typeof import("../components/AudioOrb.vue")['default']
+export const SkeletonProjectCard: typeof import("../components/Skeleton/ProjectCard.vue")['default']
 export const CardsAdvisor: typeof import("../components/cards/Advisor.vue")['default']
 export const CardsChatBubble: typeof import("../components/cards/ChatBubble.vue")['default']
+export const CardsEmptyState: typeof import("../components/cards/EmptyState.vue")['default']
 export const CardsNotice: typeof import("../components/cards/Notice.vue")['default']
 export const CardsProject: typeof import("../components/cards/Project.vue")['default']
 export const CardsStat: typeof import("../components/cards/Stat.vue")['default']
@@ -57,9 +60,12 @@ export const Head: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const Html: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Html']
 export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
 export const NuxtIsland: typeof import("../node_modules/nuxt/dist/app/components/nuxt-island")['default']
+export const LazyAudioOrb copy: LazyComponent<typeof import("../components/AudioOrb copy.vue")['default']>
 export const LazyAudioOrb: LazyComponent<typeof import("../components/AudioOrb.vue")['default']>
+export const LazySkeletonProjectCard: LazyComponent<typeof import("../components/Skeleton/ProjectCard.vue")['default']>
 export const LazyCardsAdvisor: LazyComponent<typeof import("../components/cards/Advisor.vue")['default']>
 export const LazyCardsChatBubble: LazyComponent<typeof import("../components/cards/ChatBubble.vue")['default']>
+export const LazyCardsEmptyState: LazyComponent<typeof import("../components/cards/EmptyState.vue")['default']>
 export const LazyCardsNotice: LazyComponent<typeof import("../components/cards/Notice.vue")['default']>
 export const LazyCardsProject: LazyComponent<typeof import("../components/cards/Project.vue")['default']>
 export const LazyCardsStat: LazyComponent<typeof import("../components/cards/Stat.vue")['default']>

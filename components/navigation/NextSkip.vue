@@ -1,6 +1,8 @@
 <script setup lang="ts">
 function goNext() {
-  alert("go to next")
+   alert("go to next")
+
+   navigateTo('/onboarding')
 }
 
 function skip() {

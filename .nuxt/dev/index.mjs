@@ -2820,10 +2820,18 @@ async function getIslandContext(event) {
 	};
 }
 
+const _lazy_wX8iBd = () => Promise.resolve().then(function () { return _id__get$3; });
+const _lazy_2oKU2R = () => Promise.resolve().then(function () { return index_get$3; });
+const _lazy_vbyMfp = () => Promise.resolve().then(function () { return _id__get$1; });
+const _lazy_6kjvyT = () => Promise.resolve().then(function () { return index_get$1; });
 const _lazy_m7PQ07 = () => Promise.resolve().then(function () { return renderer; });
 
 const handlers = [
   { route: '', handler: _FLjE0g, lazy: false, middleware: true, method: undefined },
+  { route: '/api/advisors/:id', handler: _lazy_wX8iBd, lazy: true, middleware: false, method: "get" },
+  { route: '/api/advisors', handler: _lazy_2oKU2R, lazy: true, middleware: false, method: "get" },
+  { route: '/api/projects/:id', handler: _lazy_vbyMfp, lazy: true, middleware: false, method: "get" },
+  { route: '/api/projects', handler: _lazy_6kjvyT, lazy: true, middleware: false, method: "get" },
   { route: '/__nuxt_error', handler: _lazy_m7PQ07, lazy: true, middleware: false, method: undefined },
   { route: '/__nuxt_island/**', handler: handler$1, lazy: false, middleware: false, method: undefined },
   { route: '/**', handler: _lazy_m7PQ07, lazy: true, middleware: false, method: undefined }
@@ -3176,6 +3184,202 @@ const styles = {};
 const styles$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
   __proto__: null,
   default: styles
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const advisors = [
+  {
+    id: 1,
+    name: "Sara Rahman",
+    role: "Senior Advisor",
+    company: "Prestige Group",
+    avatar: "/assets/images/sara.png",
+    note: "1 new note for you"
+  }
+];
+
+const _id__get$2 = defineEventHandler(async (event) => {
+  const id = Number(getRouterParam(event, "id"));
+  await new Promise((resolve) => setTimeout(resolve, 500));
+  const advisor = advisors.find((a) => a.id === id);
+  if (!advisor) {
+    throw createError({
+      statusCode: 404,
+      statusMessage: `Advisor with id ${id} not found`
+    });
+  }
+  return advisor;
+});
+
+const _id__get$3 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  default: _id__get$2
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const index_get$2 = defineEventHandler(async () => {
+  await new Promise((resolve) => setTimeout(resolve, 500));
+  return advisors;
+});
+
+const index_get$3 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  default: index_get$2
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const projects = [
+  {
+    id: 1,
+    image: "/projects/1.jpg",
+    tagTop: "The Overview",
+    name: "Berkeley Square North",
+    location: "Dubai, UAE",
+    investmentFrom: "AED 2.8M",
+    handover: "Q3 2025",
+    handoverProgress: "64% completed",
+    marketAppreciation: "+17.5%",
+    marketAppreciationMeta: "2.2B in 2026 - 5.7B in 2031",
+    rentalRoi: "12.73%",
+    rentalRoiMeta: "2.2x 5-yr appreciation",
+    accentColor: "#00F0FF",
+    // TODO: dynamic
+    accentOpacity: 54
+    // TODO: dynamic
+  },
+  {
+    id: 2,
+    image: "/projects/2.png",
+    tagTop: "The Future",
+    name: "Dubai 2040",
+    location: "Dubai, UAE",
+    investmentFrom: "AED 2.06M",
+    handover: "Q4 2026",
+    handoverProgress: "40% completed",
+    marketAppreciation: "+14.2%",
+    marketAppreciationMeta: "1.8B in 2026 - 4.9B in 2031",
+    rentalRoi: "10.5%",
+    rentalRoiMeta: "2x 5-yr appreciation",
+    accentColor: "transparent",
+    // TODO: dynamic
+    accentOpacity: 0
+    // TODO: dynamic
+  },
+  {
+    id: 3,
+    image: "/projects/3.png",
+    tagTop: "The Community",
+    name: "Jumeirah Village Circle",
+    location: "Dubai, UAE",
+    investmentFrom: "AED 1.9M",
+    handover: "Q2 2026",
+    handoverProgress: "55% completed",
+    marketAppreciation: "+12.8%",
+    marketAppreciationMeta: "1.6B in 2026 - 4.2B in 2031",
+    rentalRoi: "9.8%",
+    rentalRoiMeta: "1.8x 5-yr appreciation",
+    accentColor: "#00F0FF",
+    // TODO: dynamic
+    accentOpacity: 54
+    // TODO: dynamic
+  },
+  {
+    id: 4,
+    image: "/projects/4.png",
+    tagTop: "The Perfect Home",
+    name: "The Perfect Home",
+    location: "Dubai, UAE",
+    investmentFrom: "AED 3.1M",
+    handover: "Q1 2026",
+    handoverProgress: "72% completed",
+    marketAppreciation: "+16.1%",
+    marketAppreciationMeta: "2.0B in 2026 - 5.1B in 2031",
+    rentalRoi: "11.4%",
+    rentalRoiMeta: "2.1x 5-yr appreciation",
+    accentColor: "#00F0FF",
+    // TODO: dynamic
+    accentOpacity: 54
+    // TODO: dynamic
+  },
+  {
+    id: 5,
+    image: "/projects/5.png",
+    tagTop: "The Plains",
+    name: "The Plains",
+    location: "Dubai, UAE",
+    investmentFrom: "AED 2.4M",
+    handover: "Q3 2026",
+    handoverProgress: "48% completed",
+    marketAppreciation: "+13.6%",
+    marketAppreciationMeta: "1.7B in 2026 - 4.5B in 2031",
+    rentalRoi: "10.1%",
+    rentalRoiMeta: "1.9x 5-yr appreciation",
+    accentColor: "#00F0FF",
+    // TODO: dynamic
+    accentOpacity: 54
+    // TODO: dynamic
+  },
+  {
+    id: 6,
+    image: "/projects/6.png",
+    tagTop: "The Overview",
+    name: "Project Name 6",
+    location: "Dubai, UAE",
+    investmentFrom: "AED 2.02M",
+    handover: "Q3 2025",
+    handoverProgress: "61% completed",
+    marketAppreciation: "+15.0%",
+    marketAppreciationMeta: "1.9B in 2026 - 4.8B in 2031",
+    rentalRoi: "10.9%",
+    rentalRoiMeta: "2x 5-yr appreciation",
+    accentColor: "#00F0FF",
+    // TODO: dynamic
+    accentOpacity: 54
+    // TODO: dynamic
+  },
+  {
+    id: 7,
+    image: "/projects/7.png",
+    tagTop: "The Overview",
+    name: "Project Name 7",
+    location: "Dubai, UAE",
+    investmentFrom: "AED 1.75M",
+    handover: "Q4 2025",
+    handoverProgress: "58% completed",
+    marketAppreciation: "+12.0%",
+    marketAppreciationMeta: "1.5B in 2026 - 3.9B in 2031",
+    rentalRoi: "9.4%",
+    rentalRoiMeta: "1.7x 5-yr appreciation",
+    accentColor: "#00F0FF",
+    // TODO: dynamic
+    accentOpacity: 54
+    // TODO: dynamic
+  }
+];
+
+const _id__get = defineEventHandler(async (event) => {
+  const id = Number(getRouterParam(event, "id"));
+  await new Promise((resolve) => setTimeout(resolve, 600));
+  const project = projects.find((p) => p.id === id);
+  if (!project) {
+    throw createError({
+      statusCode: 404,
+      statusMessage: `Project with id ${id} not found`
+    });
+  }
+  return project;
+});
+
+const _id__get$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  default: _id__get
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const index_get = defineEventHandler(async () => {
+  await new Promise((resolve) => setTimeout(resolve, 600));
+  return projects;
+});
+
+const index_get$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  default: index_get
 }, Symbol.toStringTag, { value: 'Module' }));
 
 function renderPayloadResponse(ssrContext) {

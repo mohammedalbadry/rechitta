@@ -54,18 +54,18 @@ useHead({
         <div class="flex flex-wrap gap-3">
           <a
             id="download-link"
-            href="#"
+            href="https://github.com/mohammedalbadry/rechitta/archive/refs/heads/main.zip"
             class="inline-flex items-center gap-2 rounded-[999px] bg-white px-[22px] py-3 text-[14px] font-medium text-[#05080D] transition-[opacity,transform] ease-[ease] hover:opacity-[0.85] active:scale-[0.98]"
           >
             Download code (.zip)
           </a>
-          <a
+          <NuxtLink
             id="live-link"
-            href="#"
+            to="/splash"
             class="inline-flex items-center gap-2 rounded-[999px] border border-[rgba(255,255,255,0.08)] px-[22px] py-3 text-[14px] font-medium transition-[opacity,transform] ease-[ease] hover:opacity-[0.85] active:scale-[0.98]"
           >
             Live preview
-          </a>
+          </NuxtLink>
         </div>
       </header>
 
@@ -99,6 +99,18 @@ useHead({
             the first screen and the ones that follow it, which causes a visible jump in the
             background when navigating from one screen to the next. The implementation standardizes
             this background across all screens to keep transitions visually continuous.
+          </p>
+        </div>
+        <div class="mb-[14px] rounded-xl border border-l-[3px] border-[rgba(255,255,255,0.08)] border-l-[#E8B95C] bg-[rgba(255,255,255,0.04)] px-5 py-[18px] last:mb-0 motion-safe:transition-[border-color] motion-safe:duration-200 motion-safe:ease-[ease]">
+          <h3 class="mb-[6px] text-[15px] font-semibold">
+            Project-specific overlay colors are not clearly defined
+          </h3>
+          <p class="text-[14px] text-[rgba(244,247,250,0.55)]">
+            Each project uses an overlay with a different color, but the design does not specify whether
+            these colors are predefined or dynamically generated. If the colors are derived from the
+            project image, there is also no guidance for cases where the extracted color conflicts with
+            the visual design, such as an overly strong or saturated red. The design should define the
+            intended color source and how unsuitable colors should be handled.
           </p>
         </div>
       </section>

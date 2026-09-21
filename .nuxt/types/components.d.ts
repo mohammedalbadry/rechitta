@@ -14,9 +14,12 @@ type HydrationStrategies = {
 type LazyComponent<T> = DefineComponent<HydrationStrategies, {}, {}, {}, {}, {}, {}, { hydrated: () => void }> & T
 
 interface _GlobalComponents {
+  "AudioOrb copy": typeof import("../../components/AudioOrb copy.vue")['default']
   AudioOrb: typeof import("../../components/AudioOrb.vue")['default']
+  SkeletonProjectCard: typeof import("../../components/Skeleton/ProjectCard.vue")['default']
   CardsAdvisor: typeof import("../../components/cards/Advisor.vue")['default']
   CardsChatBubble: typeof import("../../components/cards/ChatBubble.vue")['default']
+  CardsEmptyState: typeof import("../../components/cards/EmptyState.vue")['default']
   CardsNotice: typeof import("../../components/cards/Notice.vue")['default']
   CardsProject: typeof import("../../components/cards/Project.vue")['default']
   CardsStat: typeof import("../../components/cards/Stat.vue")['default']
@@ -57,9 +60,12 @@ interface _GlobalComponents {
   Html: typeof import("../../node_modules/nuxt/dist/head/runtime/components")['Html']
   Body: typeof import("../../node_modules/nuxt/dist/head/runtime/components")['Body']
   NuxtIsland: typeof import("../../node_modules/nuxt/dist/app/components/nuxt-island")['default']
+  "LazyAudioOrb copy": LazyComponent<typeof import("../../components/AudioOrb copy.vue")['default']>
   LazyAudioOrb: LazyComponent<typeof import("../../components/AudioOrb.vue")['default']>
+  LazySkeletonProjectCard: LazyComponent<typeof import("../../components/Skeleton/ProjectCard.vue")['default']>
   LazyCardsAdvisor: LazyComponent<typeof import("../../components/cards/Advisor.vue")['default']>
   LazyCardsChatBubble: LazyComponent<typeof import("../../components/cards/ChatBubble.vue")['default']>
+  LazyCardsEmptyState: LazyComponent<typeof import("../../components/cards/EmptyState.vue")['default']>
   LazyCardsNotice: LazyComponent<typeof import("../../components/cards/Notice.vue")['default']>
   LazyCardsProject: LazyComponent<typeof import("../../components/cards/Project.vue")['default']>
   LazyCardsStat: LazyComponent<typeof import("../../components/cards/Stat.vue")['default']>
