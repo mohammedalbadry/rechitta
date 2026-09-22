@@ -9,9 +9,9 @@ function onMicClick() {
 <template>
   <main class="bg-black">
     <!-- hero -->
-    <div class="relative h-screen w-full overflow-y-hidden text-white">
+    <div class="relative z-6 h-screen w-full overflow-y-hidden text-white">
         <!-- page ambient background (waves + large glow) -->
-        <SplashBackgroundGlow />
+        <OnboardingBackgroundGlow />
 
          <!-- container -->
         <div class="mx-auto flex h-full w-full max-w-[1200px] flex-col justify-between px-6 pt-14">

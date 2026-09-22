@@ -1,10 +1,13 @@
 <script setup lang="ts">
 function goNext() {
-   alert("go to next")
+  const route = useRoute()
 
-   navigateTo('/onboarding')
+  if (route.path === '/onboarding') {
+    navigateTo('/test')
+  } else {
+    navigateTo('/onboarding')
+  }
 }
-
 function skip() {
   alert("skip for now")
 }

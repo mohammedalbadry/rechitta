@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import { computed, onMounted, ref } from 'vue'
+import { computed, onMounted, onUnmounted, ref } from 'vue'
 import type { MicrophoneState } from '~/composables/useMicrophone'
+import orbVideo from '~/assets/images/orb_vedio.mp4'
 
 const root = ref<HTMLElement | null>(null)
 const video = ref<HTMLVideoElement | null>(null)
@@ -15,7 +16,7 @@ function applyLevel(level: number) {
   el.style.setProperty('--orb-scale', (reduceMotion ? 1 : 1 + level * MAX_SCALE_BOOST).toFixed(3))
 }
 
-const { state, isActive, start } = useMicrophone({ onLevel: applyLevel })
+const { state, isActive, start, stop } = useMicrophone({ onLevel: applyLevel })
 
 // TODO: dynamic - messages
 const messages: Record<MicrophoneState, string> = {
@@ -43,6 +44,10 @@ onMounted(() => {
   if (reduceMotion) el.pause()
   else el.play().catch(() => {})
 })
+
+onUnmounted(() => {
+  stop()
+})
 </script>
 
 <template>
@@ -55,7 +60,7 @@ onMounted(() => {
 
     <video
       ref="video"
-      src="~/assets/images/orb_vedio.mp4"
+      :src="orbVideo"
       poster="~/assets/images/orb.png"
       autoplay
       muted
