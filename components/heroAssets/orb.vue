@@ -4,14 +4,14 @@
 <template>
     <div class="h-full grow row-start-2 my-6 flex flex-col items-center justify-center lg:col-start-2 lg:row-start-1 lg:row-span-3">
         <!-- "you can ask" label -->
-        <p class="my-8 text-center text-xs font-medium uppercase tracking-widest text-white">
+        <p class="my-8 md:mt-0 text-center text-xs font-medium uppercase tracking-widest text-white">
         You can ask<br>
         Rechitta anything
         </p>
 
         <div class="relative h-full w-full flex flex-col items-center justify-center">
         <video
-            class="object-cover absolute inset-0 z-9 h-full w-full max-h-[270px]"
+            class="object-cover absolute inset-0 z-9 h-full w-full"
             src="~/assets/images/orb_vedio.mp4"
             poster="~/assets/images/orb.png"
             autoplay

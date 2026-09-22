@@ -1,3 +1,10 @@
+export interface Unit {
+  id: number
+  unitCode: string
+  details: string
+  price: string
+}
+
 export interface Project {
   id: number
   image: string
@@ -13,6 +20,7 @@ export interface Project {
   rentalRoiMeta: string
   accentColor: string // TODO: dynamic
   accentOpacity: number // TODO: dynamic
+  units: Unit[]
 }
 
 export const projects: Project[] = [
@@ -30,7 +38,12 @@ export const projects: Project[] = [
     rentalRoi: '12.73%',
     rentalRoiMeta: '2.2x 5-yr appreciation',
     accentColor: '#00F0FF', // TODO: dynamic
-    accentOpacity: 54 // TODO: dynamic
+    accentOpacity: 54, // TODO: dynamic
+    units: [
+      { id: 1, unitCode: 'Unit #528', details: '2 Bed · Floor 5 · 1,511 sqft', price: 'AED 2.016M' },
+      { id: 2, unitCode: 'Unit #530', details: '2 Bed · Floor 3 · 1,489 sqft', price: 'AED 1.97M' },
+      { id: 3, unitCode: 'Unit #G24', details: '2 Bed · Ground · Private Pool', price: 'AED 1.68M' }
+    ]
   },
   {
     id: 2,
@@ -45,8 +58,13 @@ export const projects: Project[] = [
     marketAppreciationMeta: '1.8B in 2026 - 4.9B in 2031',
     rentalRoi: '10.5%',
     rentalRoiMeta: '2x 5-yr appreciation',
-    accentColor: 'transparent', // TODO: dynamic
-    accentOpacity: 0 // TODO: dynamic
+    accentColor: '#000', // TODO: dynamic
+    accentOpacity: 0, // TODO: dynamic
+    units: [
+      { id: 1, unitCode: 'Unit #528', details: '2 Bed · Floor 5 · 1,511 sqft', price: 'AED 2.016M' },
+      { id: 2, unitCode: 'Unit #530', details: '2 Bed · Floor 3 · 1,489 sqft', price: 'AED 1.97M' },
+      { id: 3, unitCode: 'Unit #G24', details: '2 Bed · Ground · Private Pool', price: 'AED 1.68M' }
+    ]
   },
   {
     id: 3,
@@ -61,8 +79,13 @@ export const projects: Project[] = [
     marketAppreciationMeta: '1.6B in 2026 - 4.2B in 2031',
     rentalRoi: '9.8%',
     rentalRoiMeta: '1.8x 5-yr appreciation',
-    accentColor: '#00F0FF', // TODO: dynamic
-    accentOpacity: 54 // TODO: dynamic
+    accentColor: '#0077ff', // TODO: dynamic
+    accentOpacity: 54, // TODO: dynamic
+    units: [
+      { id: 1, unitCode: 'Unit #528', details: '2 Bed · Floor 5 · 1,511 sqft', price: 'AED 2.016M' },
+      { id: 2, unitCode: 'Unit #530', details: '2 Bed · Floor 3 · 1,489 sqft', price: 'AED 1.97M' },
+      { id: 3, unitCode: 'Unit #G24', details: '2 Bed · Ground · Private Pool', price: 'AED 1.68M' }
+    ]
   },
   {
     id: 4,
@@ -77,8 +100,13 @@ export const projects: Project[] = [
     marketAppreciationMeta: '2.0B in 2026 - 5.1B in 2031',
     rentalRoi: '11.4%',
     rentalRoiMeta: '2.1x 5-yr appreciation',
-    accentColor: '#00F0FF', // TODO: dynamic
-    accentOpacity: 54 // TODO: dynamic
+    accentColor: '#e6feff', // TODO: dynamic
+    accentOpacity: 54, // TODO: dynamic
+    units: [
+      { id: 1, unitCode: 'Unit #528', details: '2 Bed · Floor 5 · 1,511 sqft', price: 'AED 2.016M' },
+      { id: 2, unitCode: 'Unit #530', details: '2 Bed · Floor 3 · 1,489 sqft', price: 'AED 1.97M' },
+      { id: 3, unitCode: 'Unit #G24', details: '2 Bed · Ground · Private Pool', price: 'AED 1.68M' }
+    ]
   },
   {
     id: 5,
@@ -93,8 +121,13 @@ export const projects: Project[] = [
     marketAppreciationMeta: '1.7B in 2026 - 4.5B in 2031',
     rentalRoi: '10.1%',
     rentalRoiMeta: '1.9x 5-yr appreciation',
-    accentColor: '#00F0FF', // TODO: dynamic
-    accentOpacity: 54 // TODO: dynamic
+    accentColor: '#ffdd00', // TODO: dynamic
+    accentOpacity: 0, // TODO: dynamic
+    units: [
+      { id: 1, unitCode: 'Unit #528', details: '2 Bed · Floor 5 · 1,511 sqft', price: 'AED 2.016M' },
+      { id: 2, unitCode: 'Unit #530', details: '2 Bed · Floor 3 · 1,489 sqft', price: 'AED 1.97M' },
+      { id: 3, unitCode: 'Unit #G24', details: '2 Bed · Ground · Private Pool', price: 'AED 1.68M' }
+    ]
   },
   {
     id: 6,
@@ -109,8 +142,13 @@ export const projects: Project[] = [
     marketAppreciationMeta: '1.9B in 2026 - 4.8B in 2031',
     rentalRoi: '10.9%',
     rentalRoiMeta: '2x 5-yr appreciation',
-    accentColor: '#00F0FF', // TODO: dynamic
-    accentOpacity: 54 // TODO: dynamic
+    accentColor: '#ffc5a7', // TODO: dynamic
+    accentOpacity: 54, // TODO: dynamic
+    units: [
+      { id: 1, unitCode: 'Unit #528', details: '2 Bed · Floor 5 · 1,511 sqft', price: 'AED 2.016M' },
+      { id: 2, unitCode: 'Unit #530', details: '2 Bed · Floor 3 · 1,489 sqft', price: 'AED 1.97M' },
+      { id: 3, unitCode: 'Unit #G24', details: '2 Bed · Ground · Private Pool', price: 'AED 1.68M' }
+    ]
   },
   {
     id: 7,
@@ -125,7 +163,12 @@ export const projects: Project[] = [
     marketAppreciationMeta: '1.5B in 2026 - 3.9B in 2031',
     rentalRoi: '9.4%',
     rentalRoiMeta: '1.7x 5-yr appreciation',
-    accentColor: '#00F0FF', // TODO: dynamic
-    accentOpacity: 54 // TODO: dynamic
+    accentColor: '#ffc5a7', // TODO: dynamic
+    accentOpacity: 54, // TODO: dynamic
+    units: [
+      { id: 1, unitCode: 'Unit #528', details: '2 Bed · Floor 5 · 1,511 sqft', price: 'AED 2.016M' },
+      { id: 2, unitCode: 'Unit #530', details: '2 Bed · Floor 3 · 1,489 sqft', price: 'AED 1.97M' },
+      { id: 3, unitCode: 'Unit #G24', details: '2 Bed · Ground · Private Pool', price: 'AED 1.68M' }
+    ]
   }
 ]

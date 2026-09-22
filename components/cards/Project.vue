@@ -37,9 +37,11 @@ defineProps({
 
     <!-- bottom title -->
     <div class="absolute inset-x-0 bottom-0 px-4 pb-3 pt-10">
-      <p class="text-[15px] font-semibold text-white">
+      <NuxtLink
+        :to="`/project/${project.id}`"
+        class="text-[15px] font-semibold text-white">
         {{ project.name }}
-      </p>
+      </NuxtLink>
       <p class="text-xs text-white/60">
         {{ project.location }}
       </p>

@@ -47,7 +47,7 @@ function onMicClick() {
       <!-- container -->
       <div class="w-full mx-auto max-w-[1200px]">
            <!-- project list -->
-          <div class="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-6">
+          <div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-6">
             <template v-if="pending">
               <div
                 v-for="(n, index) in 7"

@@ -2160,7 +2160,22 @@ _gt7Ar3fhGbbXQo2gToi_rRSZfAevjnzrdqYqyZghm1Y,
 _wH6JrtIxmaSoA8lCPWFnE9z4lQeXW6H5z3l5aymEQw
 ];
 
-const assets = {};
+const assets = {
+  "/index.mjs": {
+    "type": "text/javascript; charset=utf-8",
+    "etag": "\"1d65d-dZKDOCsd4KF27RXCEuTuvkBSTPM\"",
+    "mtime": "2026-09-22T01:36:18.695Z",
+    "size": 120413,
+    "path": "index.mjs"
+  },
+  "/index.mjs.map": {
+    "type": "application/json",
+    "etag": "\"7408d-eJGrQDWAzH91VM3KA+F2HSOViOE\"",
+    "mtime": "2026-09-22T01:36:18.695Z",
+    "size": 475277,
+    "path": "index.mjs.map"
+  }
+};
 
 function readAsset (id) {
   const serverDir = dirname$1(fileURLToPath(globalThis._importMeta_.url));
@@ -3241,8 +3256,13 @@ const projects = [
     rentalRoiMeta: "2.2x 5-yr appreciation",
     accentColor: "#00F0FF",
     // TODO: dynamic
-    accentOpacity: 54
+    accentOpacity: 54,
     // TODO: dynamic
+    units: [
+      { id: 1, unitCode: "Unit #528", details: "2 Bed \xB7 Floor 5 \xB7 1,511 sqft", price: "AED 2.016M" },
+      { id: 2, unitCode: "Unit #530", details: "2 Bed \xB7 Floor 3 \xB7 1,489 sqft", price: "AED 1.97M" },
+      { id: 3, unitCode: "Unit #G24", details: "2 Bed \xB7 Ground \xB7 Private Pool", price: "AED 1.68M" }
+    ]
   },
   {
     id: 2,
@@ -3257,10 +3277,15 @@ const projects = [
     marketAppreciationMeta: "1.8B in 2026 - 4.9B in 2031",
     rentalRoi: "10.5%",
     rentalRoiMeta: "2x 5-yr appreciation",
-    accentColor: "transparent",
+    accentColor: "#000",
     // TODO: dynamic
-    accentOpacity: 0
+    accentOpacity: 0,
     // TODO: dynamic
+    units: [
+      { id: 1, unitCode: "Unit #528", details: "2 Bed \xB7 Floor 5 \xB7 1,511 sqft", price: "AED 2.016M" },
+      { id: 2, unitCode: "Unit #530", details: "2 Bed \xB7 Floor 3 \xB7 1,489 sqft", price: "AED 1.97M" },
+      { id: 3, unitCode: "Unit #G24", details: "2 Bed \xB7 Ground \xB7 Private Pool", price: "AED 1.68M" }
+    ]
   },
   {
     id: 3,
@@ -3275,10 +3300,15 @@ const projects = [
     marketAppreciationMeta: "1.6B in 2026 - 4.2B in 2031",
     rentalRoi: "9.8%",
     rentalRoiMeta: "1.8x 5-yr appreciation",
-    accentColor: "#00F0FF",
+    accentColor: "#0077ff",
     // TODO: dynamic
-    accentOpacity: 54
+    accentOpacity: 54,
     // TODO: dynamic
+    units: [
+      { id: 1, unitCode: "Unit #528", details: "2 Bed \xB7 Floor 5 \xB7 1,511 sqft", price: "AED 2.016M" },
+      { id: 2, unitCode: "Unit #530", details: "2 Bed \xB7 Floor 3 \xB7 1,489 sqft", price: "AED 1.97M" },
+      { id: 3, unitCode: "Unit #G24", details: "2 Bed \xB7 Ground \xB7 Private Pool", price: "AED 1.68M" }
+    ]
   },
   {
     id: 4,
@@ -3293,10 +3323,15 @@ const projects = [
     marketAppreciationMeta: "2.0B in 2026 - 5.1B in 2031",
     rentalRoi: "11.4%",
     rentalRoiMeta: "2.1x 5-yr appreciation",
-    accentColor: "#00F0FF",
+    accentColor: "#e6feff",
     // TODO: dynamic
-    accentOpacity: 54
+    accentOpacity: 54,
     // TODO: dynamic
+    units: [
+      { id: 1, unitCode: "Unit #528", details: "2 Bed \xB7 Floor 5 \xB7 1,511 sqft", price: "AED 2.016M" },
+      { id: 2, unitCode: "Unit #530", details: "2 Bed \xB7 Floor 3 \xB7 1,489 sqft", price: "AED 1.97M" },
+      { id: 3, unitCode: "Unit #G24", details: "2 Bed \xB7 Ground \xB7 Private Pool", price: "AED 1.68M" }
+    ]
   },
   {
     id: 5,
@@ -3311,10 +3346,15 @@ const projects = [
     marketAppreciationMeta: "1.7B in 2026 - 4.5B in 2031",
     rentalRoi: "10.1%",
     rentalRoiMeta: "1.9x 5-yr appreciation",
-    accentColor: "#00F0FF",
+    accentColor: "#ffdd00",
     // TODO: dynamic
-    accentOpacity: 54
+    accentOpacity: 0,
     // TODO: dynamic
+    units: [
+      { id: 1, unitCode: "Unit #528", details: "2 Bed \xB7 Floor 5 \xB7 1,511 sqft", price: "AED 2.016M" },
+      { id: 2, unitCode: "Unit #530", details: "2 Bed \xB7 Floor 3 \xB7 1,489 sqft", price: "AED 1.97M" },
+      { id: 3, unitCode: "Unit #G24", details: "2 Bed \xB7 Ground \xB7 Private Pool", price: "AED 1.68M" }
+    ]
   },
   {
     id: 6,
@@ -3329,10 +3369,15 @@ const projects = [
     marketAppreciationMeta: "1.9B in 2026 - 4.8B in 2031",
     rentalRoi: "10.9%",
     rentalRoiMeta: "2x 5-yr appreciation",
-    accentColor: "#00F0FF",
+    accentColor: "#ffc5a7",
     // TODO: dynamic
-    accentOpacity: 54
+    accentOpacity: 54,
     // TODO: dynamic
+    units: [
+      { id: 1, unitCode: "Unit #528", details: "2 Bed \xB7 Floor 5 \xB7 1,511 sqft", price: "AED 2.016M" },
+      { id: 2, unitCode: "Unit #530", details: "2 Bed \xB7 Floor 3 \xB7 1,489 sqft", price: "AED 1.97M" },
+      { id: 3, unitCode: "Unit #G24", details: "2 Bed \xB7 Ground \xB7 Private Pool", price: "AED 1.68M" }
+    ]
   },
   {
     id: 7,
@@ -3347,10 +3392,15 @@ const projects = [
     marketAppreciationMeta: "1.5B in 2026 - 3.9B in 2031",
     rentalRoi: "9.4%",
     rentalRoiMeta: "1.7x 5-yr appreciation",
-    accentColor: "#00F0FF",
+    accentColor: "#ffc5a7",
     // TODO: dynamic
-    accentOpacity: 54
+    accentOpacity: 54,
     // TODO: dynamic
+    units: [
+      { id: 1, unitCode: "Unit #528", details: "2 Bed \xB7 Floor 5 \xB7 1,511 sqft", price: "AED 2.016M" },
+      { id: 2, unitCode: "Unit #530", details: "2 Bed \xB7 Floor 3 \xB7 1,489 sqft", price: "AED 1.97M" },
+      { id: 3, unitCode: "Unit #G24", details: "2 Bed \xB7 Ground \xB7 Private Pool", price: "AED 1.68M" }
+    ]
   }
 ];
 
