@@ -21,6 +21,7 @@ export const CardsAdvisor: typeof import("../components/cards/Advisor.vue")['def
 export const CardsChatBubble: typeof import("../components/cards/ChatBubble.vue")['default']
 export const CardsEmptyState: typeof import("../components/cards/EmptyState.vue")['default']
 export const CardsNotice: typeof import("../components/cards/Notice.vue")['default']
+export const CardsProject copy: typeof import("../components/cards/Project copy.vue")['default']
 export const CardsProject: typeof import("../components/cards/Project.vue")['default']
 export const CardsStat: typeof import("../components/cards/Stat.vue")['default']
 export const CardsUnitRow: typeof import("../components/cards/UnitRow.vue")['default']
@@ -67,6 +68,7 @@ export const LazyCardsAdvisor: LazyComponent<typeof import("../components/cards/
 export const LazyCardsChatBubble: LazyComponent<typeof import("../components/cards/ChatBubble.vue")['default']>
 export const LazyCardsEmptyState: LazyComponent<typeof import("../components/cards/EmptyState.vue")['default']>
 export const LazyCardsNotice: LazyComponent<typeof import("../components/cards/Notice.vue")['default']>
+export const LazyCardsProject copy: LazyComponent<typeof import("../components/cards/Project copy.vue")['default']>
 export const LazyCardsProject: LazyComponent<typeof import("../components/cards/Project.vue")['default']>
 export const LazyCardsStat: LazyComponent<typeof import("../components/cards/Stat.vue")['default']>
 export const LazyCardsUnitRow: LazyComponent<typeof import("../components/cards/UnitRow.vue")['default']>

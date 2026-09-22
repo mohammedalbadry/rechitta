@@ -21,6 +21,7 @@ interface _GlobalComponents {
   CardsChatBubble: typeof import("../../components/cards/ChatBubble.vue")['default']
   CardsEmptyState: typeof import("../../components/cards/EmptyState.vue")['default']
   CardsNotice: typeof import("../../components/cards/Notice.vue")['default']
+  "CardsProject copy": typeof import("../../components/cards/Project copy.vue")['default']
   CardsProject: typeof import("../../components/cards/Project.vue")['default']
   CardsStat: typeof import("../../components/cards/Stat.vue")['default']
   CardsUnitRow: typeof import("../../components/cards/UnitRow.vue")['default']
@@ -67,6 +68,7 @@ interface _GlobalComponents {
   LazyCardsChatBubble: LazyComponent<typeof import("../../components/cards/ChatBubble.vue")['default']>
   LazyCardsEmptyState: LazyComponent<typeof import("../../components/cards/EmptyState.vue")['default']>
   LazyCardsNotice: LazyComponent<typeof import("../../components/cards/Notice.vue")['default']>
+  "LazyCardsProject copy": LazyComponent<typeof import("../../components/cards/Project copy.vue")['default']>
   LazyCardsProject: LazyComponent<typeof import("../../components/cards/Project.vue")['default']>
   LazyCardsStat: LazyComponent<typeof import("../../components/cards/Stat.vue")['default']>
   LazyCardsUnitRow: LazyComponent<typeof import("../../components/cards/UnitRow.vue")['default']>
